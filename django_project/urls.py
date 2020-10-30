@@ -19,6 +19,6 @@ from django.urls import path, include
 # When someone goes to our blog route send them to blog.urls.
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('blog.urls')),
-    path('me/', include('me.urls'))
+    path('blog/', include('blog.urls')),
+    path('', include('me.urls'))
 ]
